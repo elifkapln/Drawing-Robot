@@ -7,7 +7,7 @@ bulunan komutlara göre çizgi çizer. (Örnek bir dosya: [example.txt](https://
 
 Nasıl Kullanılır?
 
-- Program çalıştırıldıktan sonra **Dosya Seç** butonuna tıklanarak komutların okunacağı .txt uzantılı dosya seçilir.
+- Program çalıştırıldıktan sonra **Select File** butonuna tıklanarak komutların okunacağı .txt uzantılı dosya seçilir.
 - Seçilen dosyanın içerdiği komutlar _mavi panelde_ gösterilir. 
 - Komutlarda bir _'syntax'_ hatası bulunmuyorsa, _beyaz panele_ çizim yapılır. 
 - Eğer komutlarda bir hata tespit edildiyse, hata mesajı _yeşil panelde_ gösterilir.
