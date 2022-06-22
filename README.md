@@ -1,26 +1,23 @@
 # Drawing-Robot
 
-Neyi Amaçlar?
+Developing a _GUI_ that converts a source program that contains _basic commands_ and controls the position of a _virtual pen_ on the computer screen to the corresponding image
 
-Tasarlanan VM (Virtual Machine), seçilen herhangi bir .txt uzantılı dosyayı okuyarak içerisinde
-bulunan komutlara göre çizgi çizer. (Örnek bir dosya: [example.txt](https://github.com/elifkapln/Drawing-Robot/files/8884803/example_txt.txt) )
+WHAT PURPOSES?
 
+The designed VM (Virtual Machine) reads any selected .txt file and draws lines according to the commands in it. (An example file: [example.txt](https://github.com/elifkapln/Drawing-Robot/files/8884803/example_txt.txt) )
 
-Nasıl Kullanılır?
+HOW TO USE?
 
-- Program çalıştırıldıktan sonra **Choose File** butonuna tıklanarak komutların okunacağı .txt uzantılı dosya seçilir.
-- Seçilen dosyanın içerdiği komutlar _mavi panelde_ gösterilir. 
-- Komutlarda bir _'syntax'_ hatası bulunmuyorsa, _beyaz panele_ çizim yapılır. 
-- Eğer komutlarda bir hata tespit edildiyse, hata mesajı _yeşil panelde_ gösterilir.
+- After the program is run, the **Choose File** button is clicked to select the .txt file from which the commands will be read.
+- Commands contained in the selected file are displayed on _the blue panel.
+- If there is no **'syntax'** error in the commands, the drawing is made to _the white panel.
+- If an error is detected in the commands, the error message is displayed on _the green panel.
 
-Nasıl Çalışır?
+HOW DOES IT WORK?
 
-Çizgi Çizen VM, okuduğu her dosyanın içinde bulunan komutların **'lexical analysis'**
-işlemini yapar, daha önce gramerler ile belirlenmiş 'syntax' kurallarına göre **'parsing'** işlemini
-yapar. Bu aşamada bir hata ile karşılaşılırsa, hata mesajı yeşil panelde gösterilir. Eğer dosyadan
-alınan komutlar hatasız ise çizim yapılır.
+The Line Drawer VM performs **'lexical analysis'** of the commands contained in the file it reads. It performs the **'parsing'** operation according to the **'syntax'** rules previously determined by the grammars. 
+If an error is detected at this point, the error message is displayed on the green panel. If the commands taken from the file are correct, the drawing is made.
 
-Çalıştırmak İçin Neler Gerekli?
+WHAT IS REQUIRED TO RUN?
 
-Bu program, _VS Code_ platformunda, _Python_ diline ait Turtle, Tkinter ve PLY (LEX/YACC) ile
-programlanmıştır. **lex.py** ve **yacc.py** dosyaları, programı çalıştırmak için gerekli ve yeterlidir.
+This program is in _VS Code_ platform and it has been programmed with Turtle, Tkinter and PLY (LEX/YACC) of _Python_ language. The **lex.py** and **yacc.py** files are necessary and sufficient to run the program.
